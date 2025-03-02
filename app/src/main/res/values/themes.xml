@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CarRentalsMT" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#4A90E2</item>  <!-- Change this to your desired color -->
+        <item name="colorPrimaryVariant">#357ABD</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        <!-- Secondary Toolbar Color -->
+        <item name="colorSecondary">#50E3C2</item> <!-- Change this to your preferred color -->
+        <item name="colorOnSecondary">#FFFFFF</item>    </style>
+
+    <style name="Theme.CarRentalsMT" parent="Base.Theme.CarRentalsMT" />
+    <style name="TopCornersOnly" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">16dp</item>
+        <item name="cornerSizeTopRight">16dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+
+    <style name="TextInputLayoutHint" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">10sp</item>->
+        <item name="android:textColor">@color/hintcolor</item>
+        <item name="hintTextColor">@color/hintcolor</item>
+    </style>
+
+    <style name="ToggleButtonStyle">
+        <item name="android:backgroundTint">@color/selector_button_toggle</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="strokeColor">@color/toggle_border</item>
+        <item name="android:textColor">@color/selector_button_text</item>
+    </style>
+
+
+</resources>

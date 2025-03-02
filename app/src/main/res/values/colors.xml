@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="hintcolor">#88949C</color>
+    <color name="buttonColor">#F45114</color>
+    <color name="color_grey_line">#888787</color>
+    <color name="color_primary">#50C878</color>
+
+    <color name="gray_700">#6A6A6A</color>
+    <color name="gray_500">#9e9e9e</color>
+    <color name="bg">#F8f8f8</color>
+    <color name="gray_200">#D3D4D6</color>
+    <color name="red_500">#EB5757</color>
+    <color name="green_200">#B6EAB8</color>
+    <color name="red">#ffa19e</color>
+    <color name="green">#ccffb7</color>
+    <color name="orange">#ffba80</color>
+
+    <color name="detailCardBackground">#F2F2F2</color>
+    <color name="detailCardItemTitleFontColor">#2E2E2E</color>
+    <color name="detailCardItemFontColor">#626262</color>
+
+    <color name="colorFailedMessageDialogBg">#FF6B6B</color>
+    <color name="colorSuccessMessageDialogBg">#8AC149</color>
+
+    <color name="toggle_hover">@color/gray</color>
+    <color name="toggle_normal">@color/gainsboro</color>
+    <color name="toggle_active">@color/silver</color>
+    <color name="toggle_normal_off">@color/darkgray</color>
+
+    <color name="gainsboro">#DCdCdC</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="darkgray">#a9a9a9</color>
+    <color name="gray">#808080</color>
+
+    <color name="selected_color">#6200EE</color>  <!-- Selected (Purple) -->
+    <color name="unselected_color">#E0E0E0</color>  <!-- Unselected (Gray) -->
+    <color name="toggle_border">#757575</color>  <!-- Border color -->
+</resources>

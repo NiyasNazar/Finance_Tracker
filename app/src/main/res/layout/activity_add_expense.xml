@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="10dp"
+            android:hint="@string/expense_type"
+            android:paddingTop="8dp"
+            android:paddingBottom="5dp"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="3dp"
+            app:boxCornerRadiusBottomStart="3dp"
+            app:boxCornerRadiusTopEnd="3dp"
+            app:boxCornerRadiusTopStart="3dp"
+
+            app:boxStrokeColor="@color/hintcolor"
+            app:boxStrokeWidth="1dp"
+            app:hintTextAppearance="@style/TextInputLayoutHint"
+            app:hintTextColor="@color/hintcolor"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_category"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:cursorVisible="false"
+
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/nunito_bold"
+                android:imeOptions="actionSearch"
+                android:inputType="none"
+                android:maxLines="1"
+                android:paddingVertical="5dp"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="5dp"
+            android:hint="@string/amount"
+            android:paddingTop="8dp"
+            android:paddingBottom="5dp"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="3dp"
+            app:boxCornerRadiusBottomStart="3dp"
+            app:boxCornerRadiusTopEnd="3dp"
+            app:boxCornerRadiusTopStart="3dp"
+
+            app:boxStrokeColor="@color/hintcolor"
+            app:boxStrokeWidth="1dp"
+            app:hintTextAppearance="@style/TextInputLayoutHint"
+            app:hintTextColor="@color/hintcolor"
+            app:layout_constraintTop_toBottomOf="@+id/til_category">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_amount"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:fontFamily="@font/nunito_bold"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLines="1"
+                android:paddingVertical="5dp"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="5dp"
+            android:hint="@string/date"
+            android:paddingTop="8dp"
+            android:paddingBottom="5dp"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="3dp"
+            app:boxCornerRadiusBottomStart="3dp"
+            app:boxCornerRadiusTopEnd="3dp"
+            app:boxCornerRadiusTopStart="3dp"
+
+            app:boxStrokeColor="@color/hintcolor"
+            app:boxStrokeWidth="1dp"
+            app:hintTextAppearance="@style/TextInputLayoutHint"
+            app:hintTextColor="@color/hintcolor"
+            app:layout_constraintTop_toBottomOf="@+id/til_amount">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_date"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:cursorVisible="false"
+                android:drawableRight="@drawable/ic_calendar"
+
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/nunito_bold"
+                android:imeOptions="actionSearch"
+                android:inputType="none"
+                android:maxLines="1"
+                android:paddingVertical="5dp"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="5dp"
+            android:hint="@string/date"
+            android:paddingTop="8dp"
+            android:paddingBottom="5dp"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="3dp"
+            app:boxCornerRadiusBottomStart="3dp"
+            app:boxCornerRadiusTopEnd="3dp"
+            app:boxCornerRadiusTopStart="3dp"
+
+            app:boxStrokeColor="@color/hintcolor"
+            app:boxStrokeWidth="1dp"
+            app:hintTextAppearance="@style/TextInputLayoutHint"
+            app:hintTextColor="@color/hintcolor"
+            app:layout_constraintTop_toBottomOf="@+id/til_date">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_notes"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableRight="@drawable/ic_calendar"
+
+                android:fontFamily="@font/nunito_bold"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingVertical="5dp"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.pas.financetracker.ui.widgets.CustomButton
+            android:id="@+id/btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_rect_button_primary"
+            android:text="@string/add_expense"
+            android:textAllCaps="false"
+            android:layout_marginHorizontal="15dp"
+
+
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+             />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
